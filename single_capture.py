@@ -8,7 +8,7 @@ camera.resolution = (1024, 768)
 camera.annotate_background = Color('blue')                                      
 camera.annotate_foreground = Color('yellow')
 camera.annotate_text_size = 24
-directory = 'TimeLapse'
+directory = 'SingleCapture'
 if not os.path.exists(directory):
     os.makedirs(directory)
 for awb_mode in camera.AWB_MODES:
