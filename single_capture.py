@@ -12,5 +12,7 @@ directory = 'TimeLapse'
 if not os.path.exists(directory):
     os.makedirs(directory)
 for awb_mode in camera.AWB_MODES:
+    camera.awb_mode = awb_mode
     for exp_mode in camera.EXPOSURE_MODES:
+        camera.exposure_mode = exp_mode
         camera.capture('{}/{}_{}.jpg'.format(directory, awb_mode, exp_mode))
